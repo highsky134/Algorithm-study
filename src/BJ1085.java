@@ -21,9 +21,9 @@ public class BJ1085 {
         int x_min = 0;
         int y_min = 0;
 
-        x_min = dis_x > x ? x : dis_x; // 좌우 최소값
-        y_min = dis_y > y ? y : dis_y; // 상하 최소값
+        x_min = Math.min(dis_x, x); // 좌우 최소값
+        y_min = Math.min(dis_y, y); // 상하 최소값
 
-        System.out.println(x_min > y_min ? y_min : x_min);
+        System.out.println(Math.min(x_min, y_min));
     }
 }
